@@ -1,4 +1,4 @@
-import type {LinksFunction} from '@remix-run/node';
+import type {LinksFunction, MetaFunction} from '@remix-run/node';
 import {
   Links,
   LiveReload,
@@ -6,14 +6,13 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-  V2_MetaFunction,
 } from '@remix-run/react';
 
 import styles from './tailwind.css';
 
 export const links: LinksFunction = () => [{rel: 'stylesheet', href: styles}];
 
-export const meta: V2_MetaFunction = () => [
+export const meta: MetaFunction = () => [
   {title: 'Andrew McGoveran'},
   {charset: 'utf-8'},
   {name: 'viewport', content: 'width=device-width,initial-scale=1'},
