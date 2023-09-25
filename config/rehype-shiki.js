@@ -8,8 +8,10 @@ const {
 const languages = [
   'javascript',
   'js',
+  'jsx',
   'typescript',
   'ts',
+  'tsx',
   'css',
   'html',
   'json',

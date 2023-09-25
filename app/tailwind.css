@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .mdx-content-page {
+    @apply mx-auto max-w-2xl;
+  }
+
+  .mdx-content h1 {
+    @apply text-4xl font-bold mb-6;
+  }
+
+  .mdx-content h2 {
+    @apply text-3xl font-bold mb-5;
+  }
+
+  .mdx-content h3 {
+    @apply text-2xl font-bold mb-5;
+  }
+
+  .mdx-content h4 {
+    @apply text-xl font-bold mb-5;
+  }
+
+  .mdx-content h5 {
+    @apply text-lg font-bold mb-5;
+  }
+
+  .mdx-content p {
+    @apply leading-relaxed mb-5 text-slate-700;
+  }
+
+  .mdx-content pre {
+    @apply bg-slate-700 rounded-lg p-4 mt-8 mb-8;
+  }
+
+  .mdx-content p code {
+    @apply text-sm bg-slate-200 p-1 rounded font-mono;
+  }
+
+  .mdx-content a {
+    @apply underline;
+  }
+
+  .mdx-content .banner-component p {
+    @apply m-0;
+  }
+}

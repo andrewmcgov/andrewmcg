@@ -4,7 +4,7 @@ import {Layout} from '~/components/Layout';
 export default function Blog() {
   return (
     <Layout>
-      <div className="ml-auto mr-auto prose">
+      <div className="mx-auto my-10 mdx-content mdx-content-page">
         <Outlet />
       </div>
     </Layout>

@@ -8,9 +8,12 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 
-import styles from './tailwind.css';
+import stylesheet from './tailwind.css';
 
-export const links: LinksFunction = () => [{rel: 'stylesheet', href: styles}];
+export const links: LinksFunction = () => [
+  {rel: 'stylesheet', href: stylesheet},
+  {rel: 'icon', type: 'image/png', href: '/favicon.png'},
+];
 
 export const meta: MetaFunction = () => [
   {title: 'Andrew McGoveran'},

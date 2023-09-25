@@ -8,7 +8,7 @@ interface LayoutProps {
 export function Layout({children, home}: LayoutProps) {
   return (
     <div className="flex flex-col justify-between items-center h-full overflow-scroll">
-      <div className="grow w-full max-w-4xl">
+      <div className="grow w-full max-w-2xl">
         <header className="flex justify-between py-6">
           <NavLink to="/">
             {home ? (

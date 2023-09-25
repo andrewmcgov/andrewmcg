@@ -9,6 +9,10 @@ export default function Index() {
           <Link to="/blog/hello-world">Hello world post</Link>
           <Link to="/blog/flexbox-demo">Flexbox demo</Link>
           <Link to="/blog/typescript-aliases">Typescript aliases</Link>
+          <Link to="/blog/typography">Typography</Link>
+          <Link to="/blog/ast-and-eslint">
+            How to write an ESLint rule using Abstract Syntax Trees
+          </Link>
         </li>
       </ul>
     </Layout>
