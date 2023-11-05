@@ -43,12 +43,15 @@ module.exports = async function loadRehypeShiki() {
       }
 
       const lang = codeLanguage(node);
-
       const codeString = hastToString(node);
+      const highlights = highlightedLines(node);
 
       const html = highlighter.codeToHtml(codeString, {
         lang,
-        lineOptions: [{line: 1, classes: ['highlighted-code-line']}],
+        lineOptions: highlights.map((line) => ({
+          line: Number(line),
+          classes: ['highlighted-code-line'],
+        })),
       });
 
       const tree = fromHtml(html, {fragment: true}).children[0].children;
@@ -70,6 +73,18 @@ module.exports = async function loadRehypeShiki() {
     }
 
     return null;
+  }
+
+  function highlightedLines(node) {
+    const meta = node.data?.meta;
+
+    if (!meta) return [];
+
+    const highlightedLines = meta.split('=')[1];
+
+    if (!highlightedLines) return [];
+
+    return highlightedLines.split(',');
   }
 
   return attacher;
