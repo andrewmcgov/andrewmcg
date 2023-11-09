@@ -8,9 +8,9 @@ export function Banner({children, status}: BannerProps) {
   let bannerClasses = 'banner-component p-4 my-10 rounded-md border-2';
 
   if (status === 'info') {
-    bannerClasses += ' bg-blue-100 border-blue-400 ';
+    bannerClasses += ' bg-sky-700 border-sky-400 ';
   } else if (status === 'warning') {
-    bannerClasses += ' bg-yellow-100 border-yellow-400 ';
+    bannerClasses += 'bg-yellow-700 border-yellow-400 ';
   }
 
   return <div className={bannerClasses}>{children}</div>;

@@ -28,7 +28,11 @@
   }
 
   .mdx-content p {
-    @apply leading-relaxed mb-5 text-slate-700;
+    @apply leading-relaxed mb-6 text-cyan-50;
+  }
+
+  .mdx-content img {
+    @apply my-8;
   }
 
   .mdx-content pre {
@@ -48,11 +52,11 @@
   }
 
   .mdx-content p code {
-    @apply text-sm bg-slate-200 p-1 rounded font-mono;
+    @apply text-sm bg-slate-300 text-slate-800 p-0.5 rounded font-mono;
   }
 
   .mdx-content a {
-    @apply underline;
+    @apply underline decoration-cyan-600/90;
   }
 
   .mdx-content .banner-component p {
