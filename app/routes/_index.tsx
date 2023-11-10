@@ -13,7 +13,9 @@ export default function Index() {
       </section>
       <section className="bg-cyan-800 rounded-rounded-section md:rounded-md-rounded-section py-20 md:mt-56 ">
         <div className="max-w-3xl px-4 mx-auto leading-relaxed text-lg">
-          <h2 className="text-cyan-50 font-bold text-3xl my-5">About me</h2>
+          <h2 className="text-cyan-50 font-bold text-3xl my-5 underline decoration-slate-800">
+            About me
+          </h2>
           <p className="mb-3">
             I am a web developer from Ottawa, Ontario. I work at{' '}
             <a href="https://www.shopify.ca/">Shopify</a> where I help build the
