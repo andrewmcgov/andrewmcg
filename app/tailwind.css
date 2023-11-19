@@ -28,7 +28,7 @@
   }
 
   .mdx-content p {
-    @apply leading-loose mb-8 text-cyan-50;
+    @apply leading-loose text-lg mb-8 text-cyan-50;
   }
 
   .mdx-content img {
@@ -52,7 +52,7 @@
   }
 
   .mdx-content p code {
-    @apply text-sm bg-slate-300 text-slate-800 p-0.5 rounded font-mono;
+    @apply text-sm bg-slate-500 p-0.5 rounded font-mono;
   }
 
   .mdx-content a {
