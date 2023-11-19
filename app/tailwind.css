@@ -8,15 +8,15 @@
   }
 
   .mdx-content h1 {
-    @apply text-4xl font-bold mb-6;
+    @apply text-4xl font-bold mb-16;
   }
 
   .mdx-content h2 {
-    @apply text-3xl font-bold mb-5;
+    @apply text-3xl font-bold my-10;
   }
 
   .mdx-content h3 {
-    @apply text-2xl font-bold mb-5;
+    @apply text-2xl font-bold mt-10 mb-8;
   }
 
   .mdx-content h4 {
@@ -28,7 +28,7 @@
   }
 
   .mdx-content p {
-    @apply leading-relaxed mb-6 text-cyan-50;
+    @apply leading-loose text-lg mb-8 text-cyan-50;
   }
 
   .mdx-content img {
@@ -48,11 +48,11 @@
   }
 
   .mdx-content code .highlighted-code-line {
-    @apply bg-slate-600 border-l-4 border-lime-600;
+    @apply bg-slate-600 border-l-4 border-lime-600 -ms-1;
   }
 
   .mdx-content p code {
-    @apply text-sm bg-slate-300 text-slate-800 p-0.5 rounded font-mono;
+    @apply text-sm bg-slate-500 p-0.5 rounded font-mono;
   }
 
   .mdx-content a {

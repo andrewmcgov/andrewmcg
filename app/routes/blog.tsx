@@ -7,7 +7,7 @@ export default function Blog() {
   const className =
     location.pathname === '/blog'
       ? ''
-      : 'mx-auto my-10 mdx-content mdx-content-page';
+      : 'mx-auto my-10 px-6 mdx-content mdx-content-page';
 
   return (
     <Layout>

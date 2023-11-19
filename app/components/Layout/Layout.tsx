@@ -9,7 +9,7 @@ export function Layout({children, home}: LayoutProps) {
   return (
     <div className="flex flex-col justify-between items-center h-full overflow-scroll bg-slate-800">
       <div className="grow w-full">
-        <header className="flex justify-between max-w-6xl items-center px-4 py-6 mx-auto">
+        <header className="flex justify-between max-w-6xl items-center px-6 py-6 mx-auto">
           <NavLink to="/">
             {home ? (
               <h1 className="text-2xl md:text-3xl text-cyan-50 font-bold">
