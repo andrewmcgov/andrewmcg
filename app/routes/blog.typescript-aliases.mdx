@@ -6,14 +6,19 @@ tags: ['TypeScript', 'tsconfig']
 description: 'Learn how to easily import from shared components and utilities folders, and clean up your import statements at the same time.'
 ---
 
-# Typescript aliases
+import {BlogPostHeader} from '../components/BlogPostHeader';
+
+<BlogPostHeader
+  title="TypeScript aliases to help clean up import statements"
+  date={'2021-02-20'}
+/>
 
 As a TypeScript project grows, you might get tired of your imports looking like this:
 
 ```ts
 import {Button, Select, TextField} from '../../../../../../../../components';
 import {useHistory} from '../../../../../../../../hooks';
-import {getCacheValue} from '../../../../../../../../utilities';`}
+import {getCacheValue} from '../../../../../../../../utilities';`
 ```
 
 When it comes time to move this file to another directory, you might end up with broken imports wondering if you should import from `'../../../../components'` or `'../../../../../../components'`. This can cause a frustrating delay as you count up the folders between your current file and the one you are importing.
