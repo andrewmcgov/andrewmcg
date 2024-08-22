@@ -41,5 +41,5 @@ export function GenerativeCanvas() {
     generate();
   }, []);
 
-  return <svg className="canvas" viewBox="0 0 200 200"></svg>;
+  return <svg className="canvas w-full h-full" viewBox="0 0 200 200"></svg>;
 }
