@@ -55,9 +55,9 @@ export function Layout({children, home}: LayoutProps) {
           - Say hi on{' '}
           <a
             className="underline decoration-cyan-600/90"
-            href="https://twitter.com/andrew_mcgov"
+            href="https://bsky.app/profile/andrewmcg.dev"
           >
-            Twitter
+            Bluesky
           </a>
         </p>
       </footer>
